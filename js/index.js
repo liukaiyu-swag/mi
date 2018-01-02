@@ -94,3 +94,75 @@
 		st = setInterval(stay, 3000);
 	}
 }
+{   
+	let list=document.querySelectorAll(".nx .nierongxiao")
+			list.forEach(function(ele){
+				ggb(ele)
+			})
+	function ggb(lyq){
+	let inner=lyq.querySelector(".neirongkuangjia")
+	let prev=lyq.querySelector(".next")
+	let next=lyq.querySelector(".prev")
+	let item=lyq.querySelectorAll(".neirongxiaokuangjia")
+	let pages=lyq.querySelectorAll(".diandian li")
+	let items=item.length
+	let n = 0;
+	console.log(inner)
+	next.onclick = function() {
+		n++
+		if(n >= items) {
+			n = items - 1
+				return
+			}
+			inner.style.marginLeft = -n * 300 + "px"
+			for(let i = 0; i < pages.length; i++) {
+				pages[i].classList.remove("active")
+			}
+				pages[n].classList.add("active")
+			}
+			prev.onclick = function() {
+				n--
+				if(n < 0) {
+				    n = 0
+					return
+				}
+		    inner.style.marginLeft = -n * 300 + "px"
+			for(let i = 0; i < pages.length; i++) {
+				pages[i].classList.remove("active")
+			}
+			pages[n].classList.add("active")
+			}
+			pages.forEach(function(ele, index) {
+				let m = index
+				ele.onclick = function() {
+					for(let i = 0; i < pages.length; i++) {
+						pages[i].classList.remove("active")
+					}
+					ele.classList.add("active")
+					inner.style.marginLeft = -m * 300 + "px"
+					n = index
+				}
+			})	
+		}
+}
+{
+	let list=document.querySelectorAll(".beijing .jiadian")
+			list.forEach(function(ele){
+				jiadian(ele)
+			})
+	function jiadian(jd){
+		let pagers=jd.querySelectorAll('.youbuyou .text-remen')
+	let imgs=jd.querySelectorAll('.jiadian_bottom .jiadaindi')
+	pagers.forEach(function(ele,index){
+		ele.onmouseover=function(){
+			for(let i=0;i<imgs.length;i++){
+				pagers[i].classList.remove('active');
+				imgs[i].classList.remove('active')
+				
+			}
+			this.classList.add('active');
+			imgs[index].classList.add('active')
+		}
+	})
+	}
+}
