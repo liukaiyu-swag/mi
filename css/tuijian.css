@@ -1,0 +1,49 @@
+@import url("base.css");
+.tuijian{
+	/*overflow: hidden;*/
+	/*float: left;*/
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 1226px;
+	height: 342px;
+	/*background: red;*/
+	/*margin: 0 auto;*/
+}
+.tuijian .tuijian-img1{
+	float: left;
+	width: 234px;
+	height: 300px;
+	background: #FFFFFF;
+	overflow: hidden;
+	margin-left: 14px;
+}
+.tuijian .tuijian-img2{
+	margin-left: 0;
+}
+.tuijian-a1{
+	/*float: left;*/
+	display: block;
+	width: 100%;
+	height: 140px;
+	margin-top:40px;
+	/*background: yellow;*/
+}
+.tuijian .tuijian-text1{
+	text-decoration: none;
+	display: block;
+	font-size: 12px;
+	text-align: center;
+}
+.tuijian .tuijian-text2{
+	margin-top: 24px;
+	color: #333333;
+}
+.tuijian .tuijian-text3{
+	margin-top: 16px;
+	color: #FF6700;
+}
+.tuijian .tuijian-text4{
+	margin-top: 19px;
+	color: #757575;
+}
+ 

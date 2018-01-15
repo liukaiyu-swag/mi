@@ -1,0 +1,127 @@
+@import url("base.css");
+.neirong{
+	width: 1226px;
+	height: 460px;
+	/*background: aqua;*/
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.neirong-img1{
+	position: relative;
+	float: left;
+	margin-left: 14px;
+	width: 296px;
+	height: 419px;
+	background: #FFFFFF;
+	border-top: 1px solid #ffac13;
+	color: #FFAC13;
+	overflow: hidden;
+}
+.neirong-img1 .list{
+	transition: all .5s; 
+	width:300%;
+	overflow: hidden;
+}
+.neirong-img1 .list1{
+	float: left;
+	width: 296px;
+	overflow: hidden;
+}
+.neirong-img1 .list1 img{
+	display: block;
+	margin: 0 auto;
+}
+.neirong-img1:hover .neirong-jiaotou{
+	display: block;
+}
+.neirong .neirong-jiaotou{
+	cursor: pointer;
+	line-height: 48px;
+	text-align: center;
+	position: absolute;
+	width:20px ;
+	height: 48px;
+	background: #d9d9d9;
+	font-size: 20px;
+	color: #ffffff;
+	font-family: "宋体";
+	font-weight: bold;
+	display: none;
+}
+.neirong-jiaotou2{
+	top: 189px;
+	left: 0;
+}
+.neirong-jiaotou3{
+	top: 189px;
+	right: 0;
+}
+.neirong .neirong-img1:nth-child(3){
+	border-top-color: #83c44e;
+	color: #83c44e;
+}
+.neirong .neirong-img1:nth-child(4){
+	border-top-color: #e53935;
+	color: #e53935;
+}
+.neirong .neirong-img1:nth-child(5){
+	border-top-color: #2196f3;
+	color: #2196f3;
+}
+.neirong-img2{
+	margin-left: 0;
+}
+.neirong-a1{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+}
+.neirong-img1 a:first-child{
+	margin-top: 45px;
+	font-size: 16px;
+	/*color: #FF6700;*/
+}
+.neirong-img1 a:nth-child(2){
+	margin-top: 18px;
+	font-size: 20px;
+	color: #333333;
+}
+.neirong-img1 a:nth-child(3){
+	margin: 0 auto;
+	margin-top: 4px;
+	/*font-size: 20px;*/
+	color: #B0B0B0;
+	width: 192px;
+	line-height: 20px;
+}
+.neirong-img1 a:nth-child(4){
+	margin-top: 13px;
+	color: #333333;
+}
+.neirong-img1 a:nth-child(5){
+	width: 100%;
+	height: 165px;
+	/*background: red;*/
+}
+.neirong .neirong-yuan1{
+	cursor: pointer;
+	margin: 36px 0 0 28px;
+	float: left;
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	background: #B0B0B0;
+}
+.neirong  .neirong-yuan2{
+	cursor: default;
+	border: 2px solid #FF6700;
+	background: #ffffff;
+	margin-top: 34px;
+	/*margin-left: 109px;*/
+}
+.neirong .neirong-yuan1:hover{
+	background: #FF6700;
+}
+.neirong  .neirong-yuan2:hover{
+	background: #fff;
+}
